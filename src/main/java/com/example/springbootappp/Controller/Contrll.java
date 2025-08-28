@@ -33,6 +33,7 @@ public class Contrll {
         List<Employee>data=repo.findByEmpname(empname);
 
         return data;
+        System.out.println("The data is loaded")
     }
     @DeleteMapping("/del/{empid}")
     public String del(@PathVariable int empid)
