@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Detail</title>
+</head>
+<body>
+<h2>Student Info</h2>
+
+<ul th:if="${data != null}">
+    <li th:text="'RegNo: ' + ${data.reg}"></li>
+    <li th:text="'Name: ' + ${data.name}"></li>
+    <li th:text="'Mark: ' + ${data.mark}"></li>
+</ul>
+
+<p th:if="${data == null}">❌ No student found with that Register Number.</p>
+</body>
+</html>

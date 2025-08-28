@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Find Student</title>
+</head>
+<body>
+<h2>Enter Student Reg Number</h2>
+<form th:action="@{/stu/num}" method="get">
+    <label>Register Number:</label>
+    <input type="number" name="reg" required>
+    <button type="submit">Search</button>
+</form>
+</body>
+</html>
